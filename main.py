@@ -292,13 +292,13 @@ test_true = data.y[data.test_mask].cpu().numpy()
 test_pred = predictions[data.test_mask].cpu().numpy()
 
 class_names = [
-    "Theory",
-    "Reinforcement Learning",
+    "Case Based",
     "Genetic Algorithms",
     "Neural Networks",
     "Probabilistic Methods",
-    "Case Based",
-    "Rule Learning"
+    "Reinforcement Learning",
+    "Rule Learning",
+    "Theory"
 ]
 
 per_class_f1 = f1_score(
